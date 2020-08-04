@@ -31,5 +31,5 @@ class Actor < ApplicationRecord
   #   return matching_movies
   # end
 
-  has_many(:filmography, { :through => :characters })
+  has_many(:filmography, { :through => :characters, :source => :movie })
 end

@@ -60,6 +60,7 @@ group :test do
   gem 'capybara'
   gem 'factory_bot_rails'
   gem 'rspec-rails'
+  gem 'shoulda-matchers', '~> 4.0'
   gem 'webmock'
   gem 'rspec-html-matchers'
   gem 'selenium-webdriver'
