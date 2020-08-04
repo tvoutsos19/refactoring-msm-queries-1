@@ -12,9 +12,7 @@
 #
 class Director < ApplicationRecord
   # def filmography
-  #   my_id = self.id
-
-  #   matching_movies = Movie.where({ :director_id => my_id })
+  #   matching_movies = Movie.where({ :director_id => self.id })
 
   #   return matching_movies
   # end
