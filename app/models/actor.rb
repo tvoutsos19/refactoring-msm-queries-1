@@ -12,24 +12,29 @@
 #
 class Actor < ApplicationRecord
   # def characters
-  #   matching_characters = Character.where({ :actor_id => self.id })
-
+  #   my_id = self.id
+  
+  #   matching_characters = Character.where({ :actor_id => my_id })
+  
   #   return matching_characters
   # end
 
   has_many(:characters)
 
-  # def filmography
-  #   array_of_movie_ids = Array.new
+  def filmography
+    # matching_characters = self.characters
 
-  #   self.matching_characters.each do |a_character|
-  #     array_of_movie_ids.push(a_character.movie_id)
-  #   end
+    # array_of_movie_ids = Array.new
 
-  #   matching_movies = Movie.where({ :id => array_of_movie_ids })
+    # matching_characters.each do |a_character|
+    #   array_of_movie_ids.push(a_character.movie_id)
+    # end
 
-  #   return matching_movies
-  # end
+    #   matching_movies = Movie.where({ :id => array_of_movie_ids })
+    #
+    #   return matching_movies
+    # end
 
-  has_many(:filmography, { :through => :characters, :source => :movie })
+    has_many(:filmography, { :through => :characters, :source => :movie })
+  end
 end
