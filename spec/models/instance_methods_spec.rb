@@ -24,13 +24,13 @@ describe "Actor" do
   end
 end
 
-describe "Actor" do
-  it "has an instance method defined called 'filmography'", points: 2 do
+# describe "Actor" do
+#   it "has an instance method defined called 'filmography'", points: 2 do
 
-    expect(Actor.method_defined?(:filmography)).to eq(true),
-      "Expected Actor class to define an instance method called, 'filmography', but didn't find one."
-  end
-end
+#     expect(Actor.method_defined?(:filmography)).to eq(true),
+#       "Expected Actor class to define an instance method called, 'filmography', but didn't find one."
+#   end
+# end
 
 describe "Character" do
   it "has an instance method defined called 'movie'", points: 2 do
