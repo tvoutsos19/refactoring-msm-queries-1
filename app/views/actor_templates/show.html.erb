@@ -78,7 +78,9 @@
     </th>
   </tr>
 
-  <% @this_actors_characters.each do |a_character| %>
+  <% this_actors_characters = Character.where({ :actor_id => @the_actor.id }) %>
+
+  <% this_actors_characters.each do |a_character| %>
     <% matching_movies = Movie.where({ :id => a_character.movie_id }) %>
 
     <% the_movie = matching_movies.at(0) %>
